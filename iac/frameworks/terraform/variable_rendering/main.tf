@@ -6,4 +6,7 @@ resource "aws_lb" "enabled" {
   subnets            = var.public_subnet_ids
 
   drop_invalid_header_fields = var.drop_invalid_header_fields
+  tags = {
+    yor_trace = "ad520e30-c2e1-4ffe-8104-92ace368b7a9"
+  }
 }

@@ -1,5 +1,5 @@
 resource "aws_s3_bucket" "bad_bucket" {
-  bucket   = "bad_bucket"
+  bucket = "bad_bucket"
 
   replication_configuration {
     role = aws_iam_role.replication.arn
@@ -26,5 +26,8 @@ resource "aws_s3_bucket" "bad_bucket" {
         }
       }
     }
+  }
+  tags = {
+    yor_trace = "5ee07cb7-4995-4f2d-a536-d029fe1ddcd6"
   }
 }

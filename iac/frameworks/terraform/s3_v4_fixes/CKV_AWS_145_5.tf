@@ -8,4 +8,7 @@ resource "aws_s3_bucket" "bad_bucket" {
       }
     }
   }
+  tags = {
+    yor_trace = "08559745-5433-4170-a2ef-79b6b37bcef2"
+  }
 }

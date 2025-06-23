@@ -12,6 +12,7 @@ functions:
     tags:
       RESOURCE: lambda
       PUBLIC: false
+      yor_trace: faf709e1-e0ad-468f-957e-5b8b4bcaa774
     handler: Handler.handle
     timeout: 600
     memorySize: 320
