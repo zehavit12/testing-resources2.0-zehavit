@@ -8,6 +8,7 @@ functions:
     tags:
       RESOURCE: lambda
       PUBLIC: false
+      yor_trace: f8c45166-8d3e-4e4a-bc24-c904b1a0d37b
     iamRoleStatements:
       - Effect: Allow
         Action:

@@ -1,5 +1,8 @@
 resource "aws_s3_bucket" "bad_bucket" {
-  bucket   = "bad_bucket"
+  bucket = "bad_bucket"
+  tags = {
+    yor_trace = "32762945-4aef-4ec7-b695-d9d8d5e68d54"
+  }
 }
 
 resource "aws_s3_bucket_replication_configuration" "replication" {

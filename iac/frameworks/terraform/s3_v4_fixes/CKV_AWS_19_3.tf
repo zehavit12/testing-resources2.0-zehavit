@@ -1,5 +1,8 @@
 resource "aws_s3_bucket" "bad_bucket" {
   bucket = "bad_bucket"
+  tags = {
+    yor_trace = "4e961ebd-7a9c-45da-bf2a-6e483bd347c7"
+  }
 }
 
 resource "aws_s3_bucket_server_side_encryption_configuration" "bad_sse" {

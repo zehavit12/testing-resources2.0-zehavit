@@ -20,6 +20,7 @@ functions:
     tags:
       RESOURCE: lambda
       PUBLIC: false
+      yor_trace: ffd2401a-c982-4f12-9bd0-24ce9c94df43
     iamRoleStatements:
       - Effect: Allow
         Action:
@@ -34,6 +35,7 @@ functions:
     tags:
       RESOURCE: lambda
       PUBLIC: false
+      yor_trace: bf391bbe-8449-4f09-a267-feedf5ef4c07
     iamRoleStatementsName: ${self:custom.moduleName}-people-api-role-${self:provider.tag}
     iamRoleStatements:
       # add here the exact roles the lambda needs

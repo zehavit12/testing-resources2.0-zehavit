@@ -1,11 +1,11 @@
 resource "aws_s3_bucket" "bad_bucket" {
-  bucket   = "bad_bucket"
+  bucket = "bad_bucket"
 
   replication_configuration {
     role = aws_iam_role.replication.arn
 
     rules {
-      id     = "foobar"
+      id = "foobar"
 
       filter {
         tags = {}
@@ -25,5 +25,8 @@ resource "aws_s3_bucket" "bad_bucket" {
         }
       }
     }
+  }
+  tags = {
+    yor_trace = "e9ceb546-4438-4c85-8cca-238a3c8ad96a"
   }
 }
